@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando Body</title>
+    <style>
+        .fundo{
+            background-color: bisque;
+            color: #000000;
+            text-align: center;
+            
+        }
+
+        .myImage{
+            width: 500px;
+            height: 380px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body class="fundo">
+
+    <h1>Testando mudança de cor de fundo Body, a cor da fonte e a imagem na página</h1>
+    
+    <input type="button" id="verde" value="cor verde" onclick="verde()">
+    <input type="button" id="azul" value="cor azul" onclick="azul()">
+    <input type="button" id="azul" value="cor bisque" onclick="bisque()">
+    <hr>
+    <img class="myImage" src="../img/fundo1.jpg">
+
+    <script>
+        function verde(){
+            document.querySelector(".fundo").style.background = "green";
+            document.querySelector(".fundo").style.color = "#FFFFFF";
+            document.querySelector(".myImage").src = "../img/pikachu.png";
+        }
+        function azul(){
+            document.querySelector(".fundo").style.backgroundColor = "blue";
+            document.querySelector(".fundo").style.color = "yellow";
+            document.querySelector(".myImage").src = "../img/imagem1.jpeg";
+        }
+        function bisque(){
+            document.querySelector(".fundo").style.backgroundColor = "bisque";
+            document.querySelector(".fundo").style.color = "black";
+            document.querySelector(".myImage").src = "../img/fundo1.jpg";
+        }
+        
+    </script>
+</body>
+
+</html>

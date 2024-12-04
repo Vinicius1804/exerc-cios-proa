@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto Eleitoral</title>
+</head>
+<body>
+    <h1>Voto Eleitoral</h1>
+
+    <script>
+        let ano_nasc = parseInt(prompt("Digite seu ano de nascimento: "))
+        let idade = 2024 - ano_nasc
+
+
+        if(idade < 16){
+            document.write("Sua idade é: " + idade + "<br>Você não tem idade para ter título eleitoral")
+        }
+        else if(idade >= 16 && idade < 18){
+            document.write("Sua idade é: " + idade + "<br>Título eleitoral OPCIONAL! Não é obrigatório o seu voto.")
+        }
+        else if(idade >= 18 && idade <= 69){
+            document.write("Sua idade é: " + idade + "<br>Título eleitoral OBRIGATÓRIO! É obrigatório o seu o voto.")
+        } 
+        else{
+            document.write("Sua idade é: " + idade + "<br>Titulo eleitoral OPCIONAL! Não é obrigatório o seu voto.")
+        }
+        
+    </script>
+</body>
+</html>

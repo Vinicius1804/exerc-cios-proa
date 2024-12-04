@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando Body Pt.2</title>
+    <style>
+        .fundo {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .myImage {
+            width: 400px;
+            height: 250px;
+
+        }
+    </style>
+</head>
+
+<body class="fundo">
+    <h1 id="titulo">Testando mudança de cor de fundo Body, a cor da fonte e a imagem na página</h1>
+    <p class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa saepe laudantium deserunt laborum cumque, blanditiis ipsum autem iusto accusamus ducimus architecto quisquam temporibus vitae aperiam fugiat corrupti similique quas, fugit minima?</p>
+    <input type="button" id="modo_escuro" value=" modo escuro" onclick="modo_escuro()">
+    <input type="button" id="modo_daltonico" value=" modo daltonico" onclick="modo_daltonico()">
+    <input type="button" id="modo_normal" value="modo normal" onclick="modo_normal()">
+    <input type="button" id="aumentar_texto" value="A+" onclick="aumentar_texto()">
+    <input type="button" id="diminuir_texto" value="A-" onclick="diminuir_texto()">
+    <hr>
+    <img class="myImage" src="../img/fundo1.jpg">
+    <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa saepe laudantium deserunt
+        laborum cumque, blanditiis ipsum autem iusto accusamus ducimus architecto quisquam temporibus vitae aperiam
+        fugiat corrupti similique quas, fugit minima?</p>
+    <script>
+
+        let header = document.getElementById("titulo");
+
+        function modo_escuro() {
+            document.querySelector(".fundo").style.background = "#000000";
+            document.querySelector(".fundo").style.color = "#CCCCCC";
+            header.innerHTML = "Testanto Modo Escuro";
+
+        };
+        function modo_daltonico() {
+            document.querySelector(".fundo").style.background = "#e44b8d";
+            document.querySelector(".fundo").style.color = "#adff2f";
+            header.innerHTML = "Testanto Modo Daltônico";
+        };
+        function modo_normal() {
+            document.querySelector(".fundo").style.background = "#FFFFFF";
+            document.querySelector(".fundo").style.color = "#000000";
+            document.querySelector(".texto1").style.fontSize = "20px";
+            header.innerHTML = "Testando mudança de cor de fundo Body, a cor da fonte e a imagem na página";
+        };
+        function aumentar_texto() {
+            document.querySelector(".texto1").style.fontSize = "30px";
+            document.querySelector(".texto2").style.fontSize = "30px";
+            header.innerText = "Testando Modo Baixa Visão";
+
+        };
+        function diminuir_texto() {
+            ;
+            document.querySelector(".texto1").style.fontSize = "15px";
+            document.querySelector(".texto2").style.fontSize = "15px";
+            header.innerHTML = "Testando mudança de cor de fundo Body, a cor da fonte e a imagem na página";
+
+        };
+
+
+    </script>
+</body>
+
+</html>

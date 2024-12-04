@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo Médio</title>
+</head>
+<body>
+    <h1>Saldo Médio</h1>
+
+    <script>
+        let saldo_medio = parseFloat(prompt("Entre com o seu saldo médio: "))
+
+        if(saldo_medio <= 500){
+            document.write("Você não haverá percentual em cima do saldo!<br>")
+            document.write("Saldo médio final: " +saldo_medio)
+        }
+        else if(saldo_medio <= 1000){
+            document.write("Houve um percentual de 30% em cima do saldo!<br>")
+            document.write("Saldo médio final: " + ((30 * saldo_medio) / 100 + saldo_medio) )
+        }
+        else if(saldo_medio <= 3000){
+            document.write("Houve um percentual de 40% em cima do saldo!<br>")
+            document.write("Saldo médio final: " + ((40 * saldo_medio) / 100 + saldo_medio) )
+        }
+        else{
+            document.write("Houve um percentual de 50% em cima do saldo!<br>")
+            document.write("Saldo médio final: " + ((50 * saldo_medio) / 100 + saldo_medio))
+        }
+    </script>
+</body>
+</html>

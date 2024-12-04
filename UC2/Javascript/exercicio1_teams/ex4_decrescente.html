@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrescente</title>
+</head>
+
+<body>
+    <h1>Decrescente</h1>
+
+    <script>
+        let valor1 = parseInt(prompt("Digite o 1º valor: "))
+        let valor2 = parseInt(prompt("Digite o 2º valor: "))
+        let valor3 = parseInt(prompt("Digite o 3º valor: "))
+
+
+        if (valor1 > valor2 && valor1 > valor3) {
+            if (valor2 > valor3) {
+                document.write(valor1 + " , " + valor2 + " , " + valor3)
+            } else {
+                document.write(valor1 + " , " + valor3 + " , " + valor2)
+            }
+        }
+
+        else if (valor2 > valor1 && valor2 > valor3) {
+            if (valor1 > valor3) {
+                document.write(valor2 + " , " + valor1 + " , " + valor3)
+
+            } else {
+                document.write(valor2 + " , " + valor3 + " , " + valor1)
+            }
+        } else {
+            if (valor2 > valor1) {
+                document.write(valor3 + " , " + valor2 + " , " + valor1)
+
+            } else {
+                document.write(valor3 + " , " + valor1 + " , " + valor2)
+            }
+        }
+
+    </script>
+</body>
+
+</html>

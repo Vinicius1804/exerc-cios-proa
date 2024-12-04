@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestandoMédia Aritmética</title>
+</head>
+<body>
+    <h1>Média Aritmética</h1>
+
+
+    <script>
+        let nota1 = parseFloat(prompt("Entre com a 1º nota: "))
+        let nota2 = parseFloat(prompt("Entre com a 2º nota: "))
+        let nota3 = parseFloat(prompt("Entre com a 3º nota: "))
+        let nota4 = parseFloat(prompt("Entre com a 4º nota: "))
+
+        let media = (nota1 + nota2 + nota3 + nota4) / 4
+
+        document.write("A média das 4 notas é: " + media + "<br>")
+        
+        
+        //Estrutuda de condição
+        if(media >= 6){
+            document.write("Parabéns! Você está APROVADO ")
+        }
+        else if (media >=5 ){
+            document.write("Você está de RECUPERAÇÃO!")
+        }
+        else{
+            document.write("Você está de REPROVADO!")
+        }
+
+        /*Utilizando o Math.round ele irá arredondar o valor final
+        document.write("<br>A média das 4 notas é: " + Math.round(media))
+        
+        Utilizando o .toFixed(), podemos definir quantas casas decimais queremos no nosso valor final
+        document.write("<br>A média das 4 notas é: " + media.toFixed(2))*/
+
+    </script>
+</body>
+</html>

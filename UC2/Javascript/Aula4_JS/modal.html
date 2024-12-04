@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Modal</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .botao {
+            background-color: aqua;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .botao:hover {
+            background-color: #0feb0f;
+        }
+
+        .janela_escura {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(70, 50, 50, 80%);
+            visibility: hidden;
+        }
+        @keyframes abrir_modal{
+            from{
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+        }
+        to{
+            from{
+                opacity: 1;
+                width: 500px;
+                height: 500px;
+            }
+        }
+        .modal,
+        .imagem {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            visibility: hidden;
+            animation-name: abrir_modal;
+            animation-duration: 5s;
+            animation-timing-function:ease-in-out; 
+            
+        }
+
+        
+        .imagem {
+            width: 370px;
+            height: 370px;
+            border: 10px solid white;
+        }
+
+        .fechar {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            float: right;
+            cursor: pointer;
+            border: 1px solid;
+            border-radius: 2px;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando um modal na página</h1>
+
+    <div class="botao" onclick="abrir_modal()">
+        Clique para abrir o modal!
+    </div>
+
+    <div class="janela_escura">
+        <div class="modal">
+            <div class="fechar" onclick="fechar_modal()">X</div>
+            <img src="../img/publi.jpg" class="imagem">
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+
+</html>

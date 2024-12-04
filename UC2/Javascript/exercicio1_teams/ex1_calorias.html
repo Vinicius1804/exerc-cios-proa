@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calorias de um prato</h1>
+
+    <script>
+        let num_prato = parseInt(prompt("Informe o prato desejável: \n[1] \nPrato - Vegetariano - 180 cal\nSobremesa - Abacaxi - 75 cal\nBebida - Chá - 20 cal\n\n[2] \nPrato - Peixe - 230 cal\nSobremesa - Sorvete diet - 110 cal\nBebida - Suco de laranja - 70 cal\n\n [3] \nPrato - Frango - 250 cal\nSobremesa - Mouse diet - 170 cal\nBebida - suco de melão - 100 cal\n\n [4] \nPrato - Carne - 350 cal\nSobremesa - Mouse chocolate - 200 cal\nBebida - Refrigerante diet - 65 cal"))
+
+
+
+
+        switch(num_prato){
+            case 1: 
+                document.write("Combo escolhido: " +num_prato+ "<br>Prato - Vegetariano - 180 cal <br> Sobremesa - Abacaxi - 75 cal <br> Bebida - Chá - 20 cal <br> Total de calorias: " + (180 + 75 + 20))
+                break
+            case 2:
+                document.write("Combo escolhido: " +num_prato+ "<br>Prato - Peixe - 230 cal <br> Sobremesa - Sorvete diet - 110 cal <br> Bebida - Suco de laranja - 70 cal <br> Total de calorias: " + (230 + 110 + 70))
+                break
+            case 3:
+                document.write("Combo escolhido: " +num_prato+ "<br>Prato - Frango - 250 cal <br> Sobremesa - Mouse diet - 170 cal <br> Bebida - suco de melão - 100 cal <br> Total de calorias: " + (250 + 170 + 100))
+                break
+            case 4:
+                document.write("Combo escolhido: " +num_prato+ "<br>Prato - Carne - 350 cal <br> Sobremesa - Mouse chocolate - 200 cal <br> Bebida - Refrigerante diet - 65 cal <br> Total de calorias: " + (350 + 200 + 65))
+                break
+                default:
+                    document.write("Combo não inexistente!")
+        }
+    </script>
+</body>
+</html>

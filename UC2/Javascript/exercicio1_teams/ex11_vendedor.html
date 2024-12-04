@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor</title>
+</head>
+<body>
+    <h1>Vendedor</h1>
+
+    <script>
+        let nome  = prompt("Digite o seu nome: ")
+        let sal_fixo = parseFloat(prompt("Digite o seu salário fixo: "))
+        let vendas_mes = parseFloat(prompt("Digite o total em vendas no mês: "))
+        
+        let comissao = (15 * vendas_mes) / 100 
+        let sal_final = sal_fixo + comissao
+
+        document.write("Nome do funcionário: "+ nome +"<br>")
+        document.write("Salário fixo do funcionário: "+ sal_fixo +"<br>")
+        document.write("Valor da comissão: "+ comissao +"<br>")
+        document.write("Salário final do mês com acréscimo de 15% em cima das vendas mensais: "+ sal_final)
+
+        
+        
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mais Nova</title>
+  </head>
+  <body>
+    <h1>Mais nova</h1>
+
+    <script>
+      let nome1 = prompt("Digite o 1º nome: ");
+      let idade1 = parseInt(prompt("Digite a idade do(a) " +nome1+ ": " ));
+
+      let nome2 = prompt("Digite o 2º nome: ");
+      let idade2 = parseInt(prompt("Digite a idade do(a) " +nome2+ ": " ));
+
+      let nome3 = prompt("Digite o 3º nome: ");
+      let idade3 = parseInt(prompt("Digite a idade do(a) " +nome3+ ": " ));
+
+      if (idade1 < idade2 && idade1 < idade3) {
+        document.write("O nome da pessoa mais nova é " + nome1);
+      } else if (idade2 < idade1 && idade2 < idade3) {
+        document.write("O nome da pessoa mais nova é " + nome2);
+      } else if (idade3 < idade1 && idade3 < idade2) {
+        document.write("O nome da pessoa mais nova é " + nome3);
+      } else if (idade1 == idade2) {
+        document.write("A idade das duas pessoas mais novas é" + nome1 + " e " + nome2);
+      }else if (idade2 == idade3) {
+        document.write("A idade das duas pessoas mais novas é" + nome2 + " e " + nome3);
+      }else { 
+        document.write("A idade das pessoas mais novas é" + nome3 + "e" + nome1);
+      }
+    </script>
+  </body>
+</html>

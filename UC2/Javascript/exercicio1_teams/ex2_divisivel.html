@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisível por 10, 5 e 2</title>
+</head>
+
+<body>
+    <h1>Divisível</h1>
+
+    <script>
+        let numero = parseFloat(prompt("Entre com um número: "))
+
+        if (numero % 10 == 0) {
+            alert("Esse número é divisível por 10, por 5 e por 2!")
+        }
+        else if (numero % 5 == 0 && numero % 2 == 0) {
+            alert("Esse número é divisivel por 5 e por 2, mas não é por 10.")
+        }
+        else if (numero % 5 == 0) {
+            alert("Esse número é divisivel por 5, mas não por 10 ou 2")
+        }
+        else if (numero % 2 == 0) {
+            alert("Esse número é divisível por 2, não por 10 ou 5")
+        } else {
+            alert("Esse número não é divisível por 10, 5 nem por 2")
+        }
+
+
+
+        //Irei mexer no código novamente para fazer melhores validações no IF e ELSE IF
+    </script>
+</body>
+
+</html>

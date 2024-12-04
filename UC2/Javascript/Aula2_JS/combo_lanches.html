@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo Lanches</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha o seu Combo </h1>
+
+    <script>
+        let num_combo = parseInt(prompt("Entre com o número do combo:  [1] [2] [3] [4] [5]"))
+
+        switch(num_combo){
+            case 1:
+                document.write("Combo escolhido de número: " + num_combo + "<br>")
+                document.write(" - Sanduíche de frango grelhado com abacate e alface <br>  - Batata-doce frita <br>  - Suco de laranja natural")
+                break
+            case 2:
+                document.write("Combo escolhido de número: " + num_combo + "<br>")
+                document.write(" - Hambúrguer de carne de lentilha com molho tahine <br> - Salada de quinoa com pepino e tomate <br>  - Smoothie de morango com banana")
+                break
+            case 3:
+                document.write("Combo escolhido de número: " + num_combo + "<br>")
+                document.write(" - Wrap de peito de peru, queijo cottage e rúcula <br>  - Palitinhos de cenoura com hummus <br>  - Água de coco")
+                break
+            case 1:
+                document.write("Combo escolhido de número: " + num_combo + "<br>")
+                document.write(" - Hambúrguer clássico de carne bovina com cheddar e bacon <br>  - Anéis de cebola <br>  - Refrigerante de cola")
+                break
+            case 1:
+                document.write("Combo escolhido de número: " + num_combo + "<br>")
+                document.write(" - Burrito vegetariano com feijão preto, guacamole e queijo <br>  - Chips de batata doce <br>  - Chá gelado com limão")
+                break
+                default:
+                    document.write("Combo inválido!")
+        }
+    </script>
+</body>
+</html>

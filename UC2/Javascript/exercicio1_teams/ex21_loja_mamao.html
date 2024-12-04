@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Mamão</title>
+</head>
+
+<body>
+    <h1>Loja Mamão</h1>
+
+    <script>
+        let compra = parseFloat(prompt("Entre com o valor total da compra: "));
+        let prest = parseInt(prompt("Prestações:\nEscolha em quantas vezes deseja pagar: \n[1] 1x \n[2] 2x \n[3] 3X \n[4] 4X \n[5] 5X"));
+
+        switch (prest) {
+            case 1:
+                alert("Valor final: " + compra);
+                break;
+            case 2:
+                valor_final = compra / 2
+                alert("Valor final: " + valor_final);
+                break;
+            case 3:
+                valor_final = compra / 3
+                alert("Valor final: " + valor_final);
+                break;
+            case 4:
+                valor_final = compra / 4
+                alert("Valor final: " + valor_final);
+                break;
+            case 5:
+                valor_final = compra / 5
+                alert("Valor final: " + valor_final);
+                break;
+            default:
+                alert("Inválido!")
+        }
+
+    </script>
+</body>
+
+</html>

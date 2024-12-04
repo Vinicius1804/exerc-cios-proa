@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Switch Case</title>
+</head>
+
+<body>
+    <h1>Switch Case - Faról</h1>
+
+    <script>
+        let cor_farol = prompt("Entre com uma cor do faról: ").toLowerCase()
+
+        switch (cor_farol) {
+            case "verde":
+                alert("PROSSIGA! Sinal verde.")
+                break
+            case "vermelho":
+                alert("PARE! Sinal vermelho.")
+                break
+            case "amarelo":
+                alert("ATENÇÃO! Sinal amarelo")
+                break
+            default:
+                alert("Cor Inválida")
+        }
+    </script>
+</body>

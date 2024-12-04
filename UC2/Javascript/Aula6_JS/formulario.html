@@ -1,0 +1,58 @@
+<html>
+
+</html>
+
+<head>
+    <title>ViaCEP Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="formulario.js"></script>
+    <style>
+        body {
+            font-family: arial;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Inicio do formulario -->
+    <form method="get" action=".">
+        <label>Nome:
+            <input type="text" name="nome" id="nome" size="40" placeholder="Nome">
+        </label><br>
+        <label>Data de Nascimento:
+            <input type="date" name="data_nasc" id="data_nasc">
+        </label><br>
+        <label>CPF:
+            <input type="text" name="cpf" id="cpf" size="15" maxlength="14" placeholder="123.456.789-10">
+        </label><br>
+        <label>Cep:
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
+        </label><br />
+        <label>Rua:
+            <input name="rua" type="text" id="rua" size="60" />
+        </label><br />
+        <label>Bairro:
+            <input name="bairro" type="text" id="bairro" size="40" />
+        </label><br />
+        <label>Cidade:
+            <input name="cidade" type="text" id="cidade" size="40" />
+        </label><br />
+        <label>Estado:
+            <input name="uf" type="text" id="uf" size="2" /></label><br />
+        <label>Nº:
+            <input type="text" name="numero" id="numero" size="2">
+        </label>
+        <label>Complemento:
+            <input type="text" name="complemento" id="complemento" size="4">
+        </label><br>
+        <label>Naturalidade do CEP:
+            <input type="text" name="naturalidade" id="naturalidade" size="10" disabled>
+        </label><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </form>
+</body>
+
+</html>

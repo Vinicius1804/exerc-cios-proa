@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem lPl</title>
+</head>
+<body>
+    <h1>Porcentagem lPl</h1>
+
+    <script>
+        let imposto = parseFloat(prompt("Entre com a porcentagem de IPI: "))
+
+        let codigo1 = parseInt(prompt("Digite o código do 1º produto: "))
+        let valor1 = parseFloat(prompt("Digite o valor unitário da 1º peça: "))
+        let quant1 = parseInt(prompt("Digite a quantidade de peças do produto 1: ")) 
+
+        let codigo2 = parseInt(prompt("Digite o código do 2º produto: "))
+        let valor2 = parseFloat(prompt("Digite o valor unitário da 2º peça: "))
+        let quant2 = parseInt(prompt("Digite a quantidade de peças do produto 2: ")) 
+        
+        let valor_total = (valor1*quant1 + valor2*quant2) * (imposto/100 + 1)
+
+        document.write("Valor total: " + valor_total)
+        
+    </script>
+</body>
+</html>
