@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5DBF2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#links_primeiro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+}
+
+#terceiro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 32%;
+}
+
+#conectar{
+    padding: 15px 25px;
+    background-color: transparent;
+    color: #000;
+}
+
+#conectar:hover{
+    color: #ffffff;
+    background-color: #007B83;
+}
+
+#cadastrar{
+    color: #ffffff;
+    background-color: #007B83;
+}
+
+#cadastrar:hover{
+    color: #000000;
+    background-color: transparent;
+}
+
+button{
+    position: relative;
+    padding: 15px;
+}
+
+#container_principal{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container_esquerdo{    
+    position: relative;
+    float: left;
+    width: 50%;
+    
+}
+
+#container_esquerdo h1{
+    font-family: "Playfair Display", serif;
+    width: 75%;
+    position: relative;
+    font-size: 3rem;
+}
+#container_esquerdo p{
+    position: relative;
+    width: 75%;
+    margin-top: 40px;
+    font-size: 25px;
+}
+#container_esquerdo button{
+    margin-top: 40px;
+    background-color: #007B83;
+    color: #ffffff;
+    padding: 15px 30px;
+}
+#container_direito{
+    width: 450px;
+    position: relative;
+    float: left;
+    
+}
+
+#fundo_background{
+    height: 300px;
+    background-color: #F6D5C4;
+    border: 1px solid;
+    border-radius: 15px;
+}
+#header_background{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#fundo_background h3{
+    text-align: center;
+
+}
+#fundo_background #creme{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#cubo_branco{
+    position: absolute;
+    border: 2px solid;
+    height: 220px;
+    background-color: #ffffff;
+    top: 120px;
+    left: 250px;
+    box-shadow: 5px 5px;
+    border-radius: 10px;
+}
+#cubo_branco p{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#cubo_branco img{
+    padding: 15px;
+}
+#cubo_branco button{
+    font-size: 11px;
+    padding: 3px 15px;
+    margin-left: 20%;
+    background-color: #007B83 ;
+    color: white;
+    border-radius: 10px;
+    
+}
+#background_shopping{
+    background-color: #ccc;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid;
+    width: 100%;
+
+}
+
+

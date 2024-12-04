@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!-- versão do HTML5-->
+<html>
+
+<head>
+    <title>Testando as primeiras Tags</title>
+    <!--CSS interno com a TAG STYLE-->
+    <style>
+        body {
+            font-size: 20px;
+            /* tamanho da fonte */
+            color: blue;
+            /* cor da fonte */
+            text-align: center;
+            /* alinhar ao centro da página */
+            background-color: antiquewhite;
+            /* cor de fundo */
+            background-image: url("imagens/imagem7.gif");
+            /* Insere uma imagem de fundo */
+            background-repeat: no-repeat;
+            /* Faz com que a imagem de fundo não repita */
+            background-position: center center;
+            /* Faz com que eu posicione a imagem */
+            background-attachment: fixed;
+            /* Fixa a imagem no fundo da página */
+            background-size: cover;
+            /* Preenche todo o fundo com a imagem */
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* Muda a fonte */
+            font-size: 5em;
+            /* Unidade de medida: px, pt, ens, picas, cm, mm, % */
+            color: black;
+            background-color: chartreuse;
+            background-image: url(imagens/imagem2.jpg);
+            -webkit-text-stroke: 3px green;
+
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40pt;
+            color: black;
+            background-color: aqua;
+        }
+
+        h3 {
+            color: black;
+            background-color: blueviolet;
+            width: 600px;
+            font-family: tahoma;
+            font-weight: normal;
+            /* Negrito */
+            text-decoration: underline;
+            /* Sublinhado */
+        }
+
+        h3.diferente {
+            /* Sempre que tiver um . é uma CLASSE */
+            background-color: chocolate;
+
+        }
+
+        #pikachu {
+            /* Sempre que tiver uma # é um ID */
+            width: 200px;
+            /* Altura */
+            height: 150px;
+            /* Largura */
+        }
+
+        #folha {
+            width: 300px;
+            height: 150px;
+        }
+
+        #cores {
+            width: 400px;
+            height: 150px;
+        }
+
+        h4,
+        h5,
+        h6 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            /* tamanho da fonte */
+            color: goldenrod;
+            /* cor da fonte */
+            text-align: center;
+            /* alinhar ao centro da página */
+            background-color: antiquewhite;
+            /* cor de fundo */
+            width: 800px;
+            -webkit-text-stroke: 2px black;
+            margin: 0;
+            /* espaço para fora da área */
+        }
+
+        h4 {
+            background-color: black;
+            color: pink;
+            -webkit-text-stroke: 2px white;
+            text-align: left;
+            margin-left: 400px;
+            margin: auto;
+            /* centraliza o componente na horinzontal */
+            border: 5px solid red;
+            padding: 20px;
+        }
+
+        h5 {
+            margin: 30px 0px 20px 200px;
+            border: 5px double red;
+        }
+
+        h6 {
+            text-align: right;
+            margin: 20px;
+            border-bottom: 8px solid black;
+            border-right: 8px double green;
+            border-top: 8px dotted red;
+            border-left: 8px groove blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Um texto qualquer</p> <!--tag de parágrafo-->
+    <h1>Testando a heading H1 </h1>
+    <h2>Testando a heading H2 </h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptates, animi porro eos unde iusto labore
+        numquam? Officia quisquam similique corporis commodi accusantium facere quas iure corrupti. Aspernatur, possimus
+        eos!</p>
+
+    <h3>Testando a heading H3 </h3>
+    <h3 class="diferente">Testando a heading H3 </h3>
+    <h3>Testando a heading H3 </h3>
+
+
+    <h4>Testando a heading H4 </h4>
+    <h5>Testando a heading H5 </h5>
+    <h6>Testando a heading H6 </h6>
+
+
+    <img id="pikachu" src="imagens/imagem7.gif" alt="Pikachu fazendo o ataque de raio"
+        title="Pikachu fazendo o ataque de raio" />
+    <!--ALT faz a leitura para PCD
+        TITLE mostra descrição da imagem-->
+
+    <img id="folha" src="imagens/imagem1.jpg" />
+    <img id="cores" src="imagens/imagem2.jpg" />
+
+
+</body>
+
+</html>

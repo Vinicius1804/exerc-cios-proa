@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+    position: relative;
+    font-family: verdana;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: aquamarine;
+    color: white;
+}
+
+header{
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+
+}
+
+#nav1{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+}
+
+#nav2{
+    position: relative;
+    background-color: rgb(241, 173, 90);
+    text-align: center;
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+#section_meio{
+    position: relative;
+    background-color: rgb(232, 150, 251);
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+
+aside{
+    position: relative;
+    background-color: fuchsia;
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+    margin: auto;
+    clear: left;
+}
+
+#header_meio{
+    position: relative;
+    text-align: center;
+    width: 95%;
+    height: 30px;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+}
+
+#marrom{
+    position: relative;
+    width: 95%;
+    height: 150px;
+    text-align: center;
+    background-color: burlywood;
+    margin: auto;
+    margin-top: 10px;
+}
+
+p{
+    position: relative;
+    width: 95%;
+    height: 110px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(174, 206, 254);
+}
+
+.caixa_cinza{
+    position: relative;
+    text-align: center;
+    background-color: gray;
+    width: 219px;
+    height: 125px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 18px;
+    float: left;
+
+}  
+
+
+
